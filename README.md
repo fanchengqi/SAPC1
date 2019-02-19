@@ -1,3 +1,1 @@
-#SAPC1
-
-Scripts for SAPC1 O&M
+#SAPC1 README
