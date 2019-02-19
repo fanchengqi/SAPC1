@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="MeasDataCollection.xsl"?>
+<measCollecFile xmlns="http://www.3gpp.org/ftp/specs/archive/32_series/32.435#measCollec">
+	<fileHeader fileFormatVersion="32.435 V10.0" vendorName="Ericsson AB" dnPrefix="dc=ManagedElement">
+		<fileSender localDn="ManagedElement=1" elementType="ERIC-SAPC"/>
+		<measCollec beginTime="2018-12-04T16:45:00+08:00"/>
+	</fileHeader>
+	<measData>
+		<managedElement localDn="ManagedElement=1" userLabel="Managed Element" swVersion="CXP9030138_7 R4A41"/>
+		<measInfo measInfoId="OSProcessingUnit">
+			<job jobId="ResourcesCountersJob"/>
+			<granPeriod duration="PT300S" endTime="2018-12-04T16:50:00+08:00"/>
+			<repPeriod duration="PT300S"/>
+			<measType p="1">CPULoad.Total</measType>
+			<measType p="2">Mem.PercentUsed</measType>
+			<measValue measObjLdn="OSProcessingUnit=PL-3">
+				<r p="1">0</r>
+				<r p="2">22</r>
+			</measValue>
+			<measValue measObjLdn="OSProcessingUnit=PL-4">
+				<r p="1">0</r>
+				<r p="2">21</r>
+			</measValue>
+			<measValue measObjLdn="OSProcessingUnit=SC-1">
+				<r p="1">2</r>
+				<r p="2">55</r>
+			</measValue>
+			<measValue measObjLdn="OSProcessingUnit=SC-2">
+				<r p="1">2</r>
+				<r p="2">46</r>
+			</measValue>
+		</measInfo>
+		<measInfo measInfoId="policyControlFunctionCapacityMeasuresGroup">
+			<job jobId="policyControlFunctionCapacityMeasuresJob"/>
+			<granPeriod duration="PT300S" endTime="2018-12-04T16:50:00+08:00"/>
+			<repPeriod duration="PT300S"/>
+			<measType p="1">afActiveSessions</measType>
+			<measType p="2">afEmergencyActiveSessions</measType>
+			<measType p="3">afSignallingActiveSessions</measType>
+			<measType p="4">fixedActiveSessions</measType>
+			<measType p="5">ipCanAuthenticatedEmergencyActiveSessions</measType>
+			<measType p="6">ipCanUnauthenticatedEmergencyActiveSessions</measType>
+			<measType p="7">mobileActiveSessions</measType>
+			<measType p="8">sdActiveSessions</measType>
+			<measType p="9">subscribers</measType>
+			<measValue measObjLdn="Sessions">
+				<r p="1">0</r>
+				<r p="2">0</r>
+				<r p="3">0</r>
+				<r p="4">0</r>
+				<r p="5">0</r>
+				<r p="6">0</r>
+				<r p="7">8</r>
+				<r p="8">0</r>
+			</measValue>
+			<measValue measObjLdn="Subscription">
+				<r p="9">5</r>
+			</measValue>
+		</measInfo>
+		<measInfo measInfoId="policyControlFunctionExtDbMeasuresGroup">
+			<job jobId="policyControlFunctionMeasuresJob"/>
+			<granPeriod duration="PT300S" endTime="2018-12-04T16:50:00+08:00"/>
+			<repPeriod duration="PT300S"/>
+			<measType p="2">ldapModifyRequests</measType>
+			<measType p="3">ldapModifyResponsesFailed</measType>
+			<measType p="4">ldapSearchRequests</measType>
+			<measType p="1">soapExtDbNotificationsReceived</measType>
+			<measValue measObjLdn="10.130.58.17">
+				<r p="1">1</r>
+			</measValue>
+			<measValue measObjLdn="ldap://10.130.58.14:389/">
+				<r p="2">2</r>
+				<r p="3">2</r>
+				<r p="4">2</r>
+			</measValue>
+		</measInfo>
+		<measInfo measInfoId="policyControlFunctionGxMeasuresGroup">
+			<job jobId="policyControlFunctionMeasuresJob"/>
+			<granPeriod duration="PT300S" endTime="2018-12-04T16:50:00+08:00"/>
+			<repPeriod duration="PT300S"/>
+			<measType p="1">gxCcasSuccess</measType>
+			<measType p="2">gxCcasTerminateSuccess</measType>
+			<measType p="3">gxCcrsTerminate</measType>
+			<measType p="4">gxRaas</measType>
+			<measType p="5">gxRaasSuccess</measType>
+			<measType p="6">gxRars</measType>
+			<measValue measObjLdn="PolicyControlFunction=1,Network=1,DiameterNodes=1,DiameterNode=d0-vJMSAEGW201BEr.jim.gd.node.epc.mnc000.mcc460.3gppnetwork.org">
+				<r p="1">1</r>
+				<r p="2">1</r>
+				<r p="3">1</r>
+				<r p="4">1</r>
+				<r p="5">1</r>
+			</measValue>
+			<measValue measObjLdn="PolicyControlFunction=1,Network=1,DiameterNodes=1,DiameterNode=vJMSAEGW201BEr">
+				<r p="6">1</r>
+			</measValue>
+		</measInfo>
+		<measInfo measInfoId="policyControlFunctionOtherMeasuresGroup">
+			<job jobId="policyControlFunctionMeasuresJob"/>
+			<granPeriod duration="PT300S" endTime="2018-12-04T16:50:00+08:00"/>
+			<repPeriod duration="PT300S"/>
+			<measType p="1">unknownSubscribers</measType>
+			<measValue measObjLdn="PolicyControlFunction=1,Network=1,DiameterNodes=1,DiameterNode=vJMSAEGW201BEr">
+				<r p="1">2</r>
+			</measValue>
+		</measInfo>
+	</measData>
+	<fileFooter>
+		<measCollec endTime="2018-12-04T16:50:00+08:00"/>
+	</fileFooter>
+</measCollecFile>

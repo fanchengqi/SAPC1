@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="MeasDataCollection.xsl"?>
+<measCollecFile xmlns="http://www.3gpp.org/ftp/specs/archive/32_series/32.435#measCollec">
+	<fileHeader fileFormatVersion="32.435 V10.0" vendorName="Ericsson AB" dnPrefix="dc=ManagedElement">
+		<fileSender localDn="ManagedElement=1" elementType="ERIC-SAPC"/>
+		<measCollec beginTime="2018-12-04T16:35:00+08:00"/>
+	</fileHeader>
+	<measData>
+		<managedElement localDn="ManagedElement=1" userLabel="Managed Element" swVersion="CXP9030138_7 R4A41"/>
+		<measInfo measInfoId="OSProcessingUnit">
+			<job jobId="ResourcesCountersJob"/>
+			<granPeriod duration="PT300S" endTime="2018-12-04T16:40:00+08:00"/>
+			<repPeriod duration="PT300S"/>
+			<measType p="1">CPULoad.Total</measType>
+			<measType p="2">Mem.PercentUsed</measType>
+			<measValue measObjLdn="OSProcessingUnit=PL-3">
+				<r p="1">0</r>
+				<r p="2">22</r>
+			</measValue>
+			<measValue measObjLdn="OSProcessingUnit=PL-4">
+				<r p="1">0</r>
+				<r p="2">21</r>
+			</measValue>
+			<measValue measObjLdn="OSProcessingUnit=SC-1">
+				<r p="1">3</r>
+				<r p="2">55</r>
+			</measValue>
+			<measValue measObjLdn="OSProcessingUnit=SC-2">
+				<r p="1">2</r>
+				<r p="2">46</r>
+			</measValue>
+		</measInfo>
+		<measInfo measInfoId="policyControlFunctionCapacityMeasuresGroup">
+			<job jobId="policyControlFunctionCapacityMeasuresJob"/>
+			<granPeriod duration="PT300S" endTime="2018-12-04T16:40:00+08:00"/>
+			<repPeriod duration="PT300S"/>
+			<measType p="1">afActiveSessions</measType>
+			<measType p="2">afEmergencyActiveSessions</measType>
+			<measType p="3">afSignallingActiveSessions</measType>
+			<measType p="4">fixedActiveSessions</measType>
+			<measType p="5">ipCanAuthenticatedEmergencyActiveSessions</measType>
+			<measType p="6">ipCanUnauthenticatedEmergencyActiveSessions</measType>
+			<measType p="7">mobileActiveSessions</measType>
+			<measType p="8">sdActiveSessions</measType>
+			<measType p="9">subscribers</measType>
+			<measValue measObjLdn="Sessions">
+				<r p="1">0</r>
+				<r p="2">0</r>
+				<r p="3">0</r>
+				<r p="4">0</r>
+				<r p="5">0</r>
+				<r p="6">0</r>
+				<r p="7">9</r>
+				<r p="8">0</r>
+			</measValue>
+			<measValue measObjLdn="Subscription">
+				<r p="9">5</r>
+			</measValue>
+		</measInfo>
+	</measData>
+	<fileFooter>
+		<measCollec endTime="2018-12-04T16:40:00+08:00"/>
+	</fileFooter>
+</measCollecFile>
